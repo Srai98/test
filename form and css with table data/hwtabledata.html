@@ -1,11 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Table</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Table</title>
+  <style>
+    /* Add border styles for better presentation */
+    body{
+        background-color: white;
+    }
+    table {
+      background-color: aliceblue;
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 2px solid #000000;
+      background-color: rgb(218, 227, 235);
+      text-align: center;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #cc9696;
+    }
+    #thead{
+     text-align: left;   
+     padding-left: 20px;
+    }
+    #org{
+        background-color: orange;
+    }
+    #rd{
+        background-color: red;
+    }
+    #bl{
+        background-color: lightskyblue;
+    }
+    #grn{
+        background-color: green;
+    }
+    #blr{
+        background-color: rgb(74, 74, 252);
+    }
+    #sky{
+        background-color: lightgoldenrodyellow;
+    }
+  </style>
 </head>
 <body>
-    
+
+  <h2>Year 9</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th colspan="6" id="thead">Year 9</th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>Monday</th>      <!-- 1 column -->
+        <th>Tuesday</th>     <!-- 2 column -->
+        <th>Wednesday</th>   <!-- 3 column -->
+        <th>Thursday</th>    <!-- 4 column -->
+        <th>Friday</th>      <!-- 5 column -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr>  <!-- add first data with max blank td -->
+        <td><!-- blank --></td>
+        <td><!-- blank --></td>
+        <td><!-- blank --></td>
+        <td>9-10 starts<br>8.30-10.00 pld</td>
+        <td><!-- blank --></td>
+        <td><!-- blank --></td>
+      </tr>
+      <tr>  <!-- second table data  -->
+        <td>8.30 - 9.20 <br> LA </td>
+        <td id="org">LA</td>
+        <td rowspan="2" id="bl">PBC2</td>
+        <td rowspan="2" id="org">10.00 - 10.55 <br> LA/STARS</td>
+        <td rowspan="2" id="grn">Option 2</td>
+        <td id="org">LA</td>
+      </tr>
+      <tr>   <!-- maths/pe and option 1 data  -->
+        <td>9.20 - 10.10</td>
+        <td id="rd">Maths/PE</td>
+        <td id="grn">Option 1</td>
+      </tr>
+      <tr>    <!-- add a table interval data -->
+        <td>10.10 - 10.30</td>
+        <td colspan="2">INTERVAL</td>
+        <td>10.55 - 11.15</td>
+        <td colspan="2">INTERVAL</td>
+      </tr>
+      <tr>  <!-- 10:30 to 11:50 -->
+        <td>10.30 - 11.50<br>P2</td>
+        <td id="bl">PBC2</td>
+        <td id="rd">Assembly 10.30 <br> Maths/PE </td>
+        <td id="bl">11.15 - 12.20 <br>PBC2</td>
+        <td id="blr">PBC1</td>
+        <td id="blr">PBC1</td>
+      </tr>
+      <tr>  <!-- 11:50 to 1:10 -->
+        <td>11.50 - 1.10<br> P3</td>
+        <td id="blr">PBC1</td>
+        <td id="grn">Option 2</td>
+        <td id="blr">12.20 - 1.25 <br> PBC1</td>
+        <td id="sky">Academy</td>
+        <td id="rd">Maths/PE</td>
+      </tr>
+      <tr>  <!-- 1:10 tp 1:50 lunch an lecture -->
+        <td>1.10 - 1.50</td>
+        <td colspan="2">LUNCH</td>
+        <td>1.25 - 2.05 <br> LUNCH </td>
+        <td colspan="2">LUNCH</td>
+      </tr>
+      <tr>  <!-- add first data with max blank td -->
+        <td>1.50  - 3.10 <br> P4 </td>
+        <td id="grn">Option 1</td>
+        <td id="blr">PBC1</td>
+        <td id="rd">2.05 - 3.10 <br> Maths/PE </td>
+        <td id="sky">Academy</td>
+        <td id="bl">PBC2</td>
+      </tr>
+      <!-- Add more rows in tbody as needed -->
+    </tbody>
+  </table>
+
 </body>
 </html>
